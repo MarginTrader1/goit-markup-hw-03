@@ -194,16 +194,45 @@ li {
 
 /* products section styles */
 
+.products {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+    
 .products-title {
-    color: var(--main-title-color);
+    margin: 0;
+    margin-bottom: 72px;
     
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    color: var(--main-title-color);
 
     text-align: center;
     text-transform: capitalize;
+}
+
+.products-list {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+Также можно сделать отступы как на макете по 24px между картинками cпомобом ниже:
+
+.products-list > li:not(:first-child) {
+    margin-left: 24px;
+}
+
+но тогда после последней картинки остается небольшой отступ
+*/
+
+.products-list img {
+    display: block;
 }
 
 /* team section styles */
@@ -212,7 +241,15 @@ li {
     background-color: #F4F4FD;
 }
 
+.team .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .team-title {
+    margin: 0;
+    margin-bottom: 72px;
+    
     color: var(--main-title-color);
     font-size: 36px;
     line-height: 1.11;
@@ -222,9 +259,18 @@ li {
     text-transform: capitalize;
 }
 
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
 .team-member {
-    color: var(--main-title-color);
+    margin: 0;
+    margin-bottom: 8px;
     
+    color: var(--main-title-color);
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -235,12 +281,25 @@ li {
     text-align: center;
 }
 
+.team-card p {
+    margin: 0;
+}
+
+.team-card-signature {
+    padding: 32px 16px;
+}
+
 /* footer styles */
 
 .invitation {
     background-color: var(--main-title-color);
     color: #E7E9FC;
 }
+
+.invitation .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+} 
 
 .invitation-logo-name {
     color: #F4F4FD;
@@ -252,6 +311,12 @@ li {
 
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.invitation p {
+    width: 264px;
+    margin: 0;
+    margin-top: 16px;
 }
 
 /* porfolio styles */
