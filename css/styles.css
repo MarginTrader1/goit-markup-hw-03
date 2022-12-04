@@ -1,4 +1,5 @@
-/* Стандартна блокова модель "border-box" */
+/* Стандартна блокова модель "border-box". Те же параметры указаны
+в "нормализаторе", а эту запись оставил для примера */
 
 *,
 *::before,
@@ -20,6 +21,7 @@
 body {
     background-color: var(--main-background-color);
         
+
     font-family: "Roboto", sans-serif;
     color: var(--main-text-color);
     font-weight: 400;
@@ -32,6 +34,12 @@ li {
     list-style-type: none;
 }
 
+.container {  
+    margin-left: auto;
+    margin-right: auto;
+    width: 1152px;
+}
+
 .title {
     font-weight: 600
     /* пытался сгруппировать некторые стили, 
@@ -39,6 +47,12 @@ li {
 }
 
 /* logo styles */
+
+.logo-flex {
+    display: flex;
+    align-items: center;
+    padding: 24px 12px;
+}
 
 .logo {
     color: var(--main-title-color);
@@ -59,6 +73,20 @@ li {
 
 /* menu styles */
 
+.menu {
+    margin-left: 77px;
+}
+
+.menu-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list > li:not(:first-child) {
+    margin-left: 40px; 
+}
+
 .link {
     color: var(--main-title-color);
     text-decoration: none; 
@@ -69,9 +97,19 @@ li {
     color: var(--link-color);
 }
 
+.menu-contacts {
+    margin-left: auto;
+}
+
 .contacts-link {
+    display: inline;
+
     color: var(--main-text-color);
-    text-decoration: none;    
+    text-decoration: none;
+}
+
+.contacts-link:last-child {
+    margin-left: 40px;
 }
 
 .contacts-link:hover, 
@@ -82,18 +120,34 @@ li {
 /* hero styles */
 
 .promotion {
+    min-height: 603px;
+    padding: 192px 0;
+    margin-bottom: 120px;
+
     background-color: var(--main-title-color);
     text-align: center;
 }
 
 .promotion-title {
+    
+    width: 492px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+
     color: var(--main-background-color);
     font-size: 56px;
     line-height: 1.07;
-    
 }
 
 .button {
+    min-width: 170px;
+    padding: 16px 32px;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    
     font-family: inherit;
     color: var(--main-background-color);
     font-size: 16px;
@@ -115,11 +169,27 @@ li {
     display: none;
 }
 
+.features-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
 .features-title {
+    margin: 0;
+    margin-bottom: 8px;    
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.04em;
+}
+
+.features-list > li:not(:first-child) {
+    margin-left: 24px;
+}
+
+.features-list p {
+    margin: 0;
 }
 
 /* products section styles */
