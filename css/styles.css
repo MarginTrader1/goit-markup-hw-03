@@ -37,7 +37,7 @@ li {
 .container {  
     margin-left: auto;
     margin-right: auto;
-    width: 1152px;
+    width: 1128px;
 }
 
 .title {
@@ -51,7 +51,7 @@ li {
 .logo-flex {
     display: flex;
     align-items: center;
-    padding: 24px 12px;
+    padding: 24px 0px;
 }
 
 .logo {
@@ -129,7 +129,6 @@ li {
 }
 
 .promotion-title {
-    
     width: 492px;
     padding: 0;
     margin: 0;
@@ -171,8 +170,13 @@ li {
 
 .features-list {
     display: flex;
+    
     padding: 0;
     margin: 0;
+}
+
+.features-list-item {
+    width: 264px;
 }
 
 .features-title {
@@ -190,13 +194,14 @@ li {
 
 .features-list p {
     margin: 0;
+    letter-spacing: 0.02em
 }
 
 /* products section styles */
 
 .products {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
     
 .products-title {
@@ -322,10 +327,34 @@ li {
 /* porfolio styles */
 
 .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;   
+}
+
+.portfolio-title {
     display: none;
 }
 
+.portfolio-nav  {
+    margin-left: 320px;
+    margin-bottom: 75px;
+}
+
+.portfolio-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-list > li:not(:first-child) {
+    margin-left: 24px;
+}
+
 .porfolio-button {
+    padding: 12px 24px;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    
     background-color: #E7E9FC;
     border: 1px solid #E7E9FC;
     
@@ -346,11 +375,43 @@ li {
     color: var(--main-background-color);
 } 
 
+/* примеры работ в портфолио */
+
+.works-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px; 
+}
+
+.work-card {
+    width: 360px;
+    border: 0.5px solid rgba(244, 244, 253, 1)  
+}
+
 .work-card-title {
+    margin: 0;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    
     color: var(--main-title-color);
     
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
+
+.works-list p {
+    margin: 0;
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
+
+.work-card img {
+    display: block;
+    margin-bottom: 32px;
+}
+
 
