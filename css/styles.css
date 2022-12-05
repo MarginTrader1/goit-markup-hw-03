@@ -52,6 +52,8 @@ li {
     display: flex;
     align-items: center;
     padding: 24px 0px;
+
+    border-bottom: 1px solid rgb(212, 211, 211);
 }
 
 .logo {
@@ -122,8 +124,7 @@ li {
 .promotion {
     min-height: 603px;
     padding: 192px 0;
-    margin-bottom: 120px;
-
+    
     background-color: var(--main-title-color);
     text-align: center;
 }
@@ -165,6 +166,11 @@ li {
 /* features section styles */
 
 .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.main-features-title {
     display: none;
 }
 
@@ -200,7 +206,6 @@ li {
 /* products section styles */
 
 .products {
-    padding-top: 120px;
     padding-bottom: 120px;
 }
     
