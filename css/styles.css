@@ -120,11 +120,13 @@ li {
 
 /* hero styles */
 
-.promotion {
+.promotion {  
+    background-color: var(--main-title-color);
+}
+
+.promotion-content {
     min-height: 603px;
     padding: 192px 0;
-    
-    background-color: var(--main-title-color);
     text-align: center;
 }
 
