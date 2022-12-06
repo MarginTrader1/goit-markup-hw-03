@@ -23,7 +23,6 @@ body {
     
     font-family: "Roboto", sans-serif;
     color: var(--main-text-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
@@ -33,10 +32,16 @@ li {
     list-style-type: none;
 }
 
+header {
+    padding: 24px 0px;
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+
 .container {  
     margin-left: auto;
     margin-right: auto;
-    width: 1128px;
+    padding: 0 15px;
+    width: 1158px;
 }
 
 .title {
@@ -50,9 +55,8 @@ li {
 .logo-flex {
     display: flex;
     align-items: center;
-    padding: 24px 0px;
 
-    border-bottom: 1px solid rgb(212, 211, 211);
+    
 }
 
 .logo {
@@ -305,14 +309,12 @@ li {
 /* footer styles */
 
 .invitation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
     background-color: var(--main-title-color);
     color: #E7E9FC;
 }
-
-.invitation .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
-} 
 
 .invitation-logo-name {
     color: #F4F4FD;
@@ -395,15 +397,18 @@ li {
 }
 
 .work-card {
-    width: 360px;
-    border: 0.5px solid rgba(244, 244, 253, 1)  
+    width: 360px;  
+}
+
+.work-card-signature {
+    padding: 32px 16px;
+    border: 0.5px solid rgba(244, 244, 253, 1)
 }
 
 .work-card-title {
     margin: 0;
     margin-bottom: 8px;
-    margin-left: 16px;
-    
+       
     color: var(--main-title-color);
     
     font-size: 20px;
@@ -411,15 +416,17 @@ li {
     letter-spacing: 0.02em;
 }
 
-.works-list p {
+.work-card-description {
     margin: 0;
-    margin-left: 16px;
-    margin-bottom: 32px;
+    color: var(--main-text-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .work-card img {
     display: block;
-    margin-bottom: 32px;
 }
 
 
