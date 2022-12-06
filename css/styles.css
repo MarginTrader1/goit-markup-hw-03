@@ -24,8 +24,6 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--main-text-color);
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em; 
 }
 
 li {
@@ -55,8 +53,6 @@ header {
 .logo-flex {
     display: flex;
     align-items: center;
-
-    
 }
 
 .logo {
@@ -205,7 +201,8 @@ header {
 
 .features-list p {
     margin: 0;
-    letter-spacing: 0.02em
+    line-height: 1.5;
+    letter-spacing: 0.02em; 
 }
 
 /* products section styles */
@@ -300,6 +297,9 @@ header {
 .team-card p {
     margin: 0;
     padding: 0;
+    
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .team-card-signature {
